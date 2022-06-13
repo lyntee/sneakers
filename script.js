@@ -38,8 +38,6 @@ const cartBtn = document.querySelector("#cart-btn");
 const gallery = document.querySelector(".gallery");
 const closeIcon = document.querySelector(".close-icon");
 const galleryThumbnails = document.querySelectorAll(".gallery-thumbnail img");
-const galleryPrev = document.querySelector(".prev-icon");
-const galleryNext = document.querySelector(".next-icon");
 const galleryImageShown = document.querySelector("#pdt-image");
 
 // Show side menu
@@ -167,10 +165,8 @@ function removeCartItem(event) {
 }
 
 // show gallery modal
-webpageThumbnails.forEach((img) => {
-  img.addEventListener("click", () => {
-    gallery.classList.add("gallery-modal");
-  });
+imageShown.addEventListener("click", () => {
+  gallery.classList.add("gallery-modal");
 });
 
 // remove gallery modal
@@ -187,29 +183,11 @@ for (let i = 0; i < galleryThumbnails.length; i++) {
 }
 
 //gallery slider
-galleryPrev.addEventListener("click", showGalleryPrev);
-galleryNext.addEventListener("click", showGalleryNext);
+galleryThumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", showCurrentThumbnail);
+});
 
-function showGalleryPrev() {
-  const currentImage = galleryImageShown.getAttribute("g-num");
-  let currentImageNum = Number(currentImage);
-  if (currentImageNum > 0) {
-    currentImageNum--;
-  } else {
-    currentImageNum = 3;
-  }
-  galleryImageShown.src = images[currentImageNum].src;
-  galleryImageShown.setAttribute("g-num", images[currentImageNum].num);
-}
-
-function showGalleryNext() {
-  const currentImage = galleryImageShown.getAttribute("gnum");
-  let currentImageNum = Number(currentImage);
-  if (currentImageNum < 3) {
-    currentImageNum++;
-  } else {
-    currentImageNum = 0;
-  }
-  galleryImageShown.src = images[currentImageNum].src;
-  galleryImageShown.setAttribute("gnum", images[currentImageNum].num);
+function showCurrentThumbnail(event) {
+  const thumbnailIndex = Number(event.target.id);
+  galleryImageShown.src = images[thumbnailIndex].src;
 }

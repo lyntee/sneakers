@@ -36,6 +36,7 @@
 .icons:hover,
 .prev:hover,
 .next:hover,
+#product-image:hover,
 #minus-icon:hover,
 #plus-icon:hover,
 #cart-btn:hover,
@@ -370,43 +371,17 @@ header nav {
     align-items: center;
   }
 
-  .gallery-content .close-icon {
+  .close-icon {
     align-self: end;
     margin-bottom: 10px;
   }
 
-  #pdt-image {
-    width: 500px;
-  }
-
-  .gallery-slider {
-    position: relative;
-  }
-
-  .prev-icon,
-  .next-icon {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    padding: 10px;
-  }
-
-  .prev-icon {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-  }
-
-  .next-icon {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: 1;
-  }
-
-  .prev-icon:hover,
-  .next-icon:hover,
   .close-icon:hover {
     cursor: pointer;
+  }
+
+  #pdt-image {
+    width: 500px;
   }
 
   /* Price */

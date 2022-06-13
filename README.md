@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Page](https://your-live-site-url.com)
+- [Live Page](https://lyntee.github.io/sneakers)
 
 ## My process
 
@@ -47,7 +47,7 @@ Users should be able to:
 ### Functionalities of web page
 
 - Side Menu (accessible upon click event)
-- Image Silder (Mobile) / Gallery Slider (Web)
+- Image Silder (Mobile) / Lightbox Gallery (Web)
 - Adding items to cart
   - if number of items < 0, nothing will be added
   - else item will be added
