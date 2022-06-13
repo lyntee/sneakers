@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>E-commerce product page</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <article class="side-menu-modal hide-text">
+    <ul class="side-menu">
+      <li><img src="./images/icon-close.svg" alt="close button" class="close-button" /></li>
+      <a href="#">
+        <li>Collections</li>
+      </a>
+      <a href="#">
+        <li>Men</li>
+      </a>
+      <a href="#">
+        <li>Women</li>
+      </a>
+      <a href="#">
+        <li>About</li>
+      </a>
+      <a href="#">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </article>
+
+  <header>
+    <div class="arranger">
+      <img src="./images/icon-menu.svg" alt="menu" id="menu-icon" />
+      <img src="./images/logo.svg" alt="logo" />
+      <nav>
+        <ul>
+          <a href="#">
+            <li>Collections</li>
+          </a>
+          <a href="#">
+            <li>Men</li>
+          </a>
+          <a href="#">
+            <li>Women</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+    <div class="arranger">
+      <img src="./images/icon-cart.svg" alt="cart" class="icons" id="cart-icon" />
+      <img src="./images/image-avatar.png" alt="user avatar" class="icons" />
+    </div>
+    <article class="cart-tab hide-text">
+      <header>Cart</header>
+      <main>
+        <p class="cart-content">Your cart is empty.</p>
+      </main>
+    </article>
+  </header>
+
+  <section class="main">
+
+    <section class="left">
+
+      <section class="image-slider">
+        <img src="./images/icon-previous.svg" alt="prev" class="prev" />
+        <img src="./images/icon-next.svg" alt="next" class="next" />
+        <img src="./images/image-product-1.jpg" alt="product-image" id="product-image" num="0" />
+      </section>
+
+      <section class="image-thumbnail">
+        <img src="" alt="pdt1" />
+        <img src="" alt="pdt2" />
+        <img src="" alt="pdt3" />
+        <img src="" alt="pdt4" />
+      </section>
+
+    </section>
+
+    <section class="right">
+
+      <section class="desc">
+        <h6 class="orange">Sneaker Company</h6>
+        <h3 class="large">Fall Limited Edition Sneakers</h3>
+        <p class="grey">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber
+          outer
+          sole, they’ll
+          withstand everything the weather can offer.</p>
+      </section>
+
+      <section class="price">
+        <div class="arranger">
+          <h3 class="large">$125.00</h3>
+          <h5 class="discount">50%</h5>
+        </div>
+        <h5 class="original-price">$250.00</h5>
+      </section>
+
+      <section class="purchase">
+        <div class="arranger">
+          <img src="./images/icon-minus.svg" alt="minus" id="minus-icon" />
+          <p id="number-of-purchase">0</p>
+          <img src="./images/icon-plus.svg" alt="plus" id="plus-icon" />
+        </div>
+        <button id="cart-btn">
+          <img src="./images/icon-cart.svg" alt="cart" />
+          <p>Add to cart</p>
+        </button>
+      </section>
+
+    </section>
+  </section>
+
+  <section class="gallery">
+
+    <div class="gallery-content">
+
+      <img src="./images/icon-close.svg" alt="close-icon" class="close-icon" />
+
+      <section class="gallery-slider">
+        <img src="./images/icon-previous.svg" alt="prev" class="prev-icon" />
+        <img src="./images/icon-next.svg" alt="next" class="next-icon" />
+        <img src="./images/image-product-1.jpg" alt="product-image" id="pdt-image" g-num="0" />
+      </section>
+
+      <section class="gallery-thumbnail">
+        <img src="" alt="pdt1" />
+        <img src="" alt="pdt2" />
+        <img src="" alt="pdt3" />
+        <img src="" alt="pdt4" />
+      </section>
+
+    </div>
+
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">@lyntee</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

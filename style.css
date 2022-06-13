@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* Utilities */
+.hide-text {
+  display: none;
+}
+
+.orange {
+  color: hsl(26, 100%, 55%);
+}
+
+.large {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.grey {
+  color: hsl(219, 9%, 45%);
+}
+
+.bold-text {
+  font-weight: 900;
+  color: black;
+}
+
+.close-button:hover,
+#menu-icon:hover,
+.icons:hover,
+.prev:hover,
+.next:hover,
+#minus-icon:hover,
+#plus-icon:hover,
+#cart-btn:hover,
+#del-btn:hover {
+  cursor: pointer;
+}
+
+.cart-content {
+  text-align: center;
+  margin: 30px;
+}
+
+/* Side Menu  */
+body {
+  position: relative;
+}
+
+.side-menu {
+  width: 70%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.side-menu li {
+  font-weight: 700;
+  list-style: none;
+  padding: 10px;
+}
+
+.side-menu a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+}
+
+header img {
+  margin: 0 10px 0 10px;
+}
+
+header nav {
+  display: none;
+}
+
+/* Cart tab */
+.cart-tab {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  z-index: 2;
+}
+
+.cart-tab header {
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.cart-tab main {
+  width: 300px;
+  color: hsl(219, 9%, 45%);
+  display: block;
+}
+
+.cart-item {
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+.arranger-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thumbnail {
+  width: 20%;
+  border-radius: 5px;
+}
+
+.cart-item button {
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Image Slider */
+#product-image {
+  width: 100%;
+  position: relative;
+}
+
+.prev,
+.next {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.prev {
+  margin: 10px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.next {
+  margin: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+}
+
+.image-thumbnail,
+.gallery {
+  display: none;
+}
+
+/* Description of product */
+.desc {
+  padding: 20px;
+}
+
+.desc h6 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.desc h3 {
+  margin-bottom: 10px;
+}
+
+/* Price of product */
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.price .arranger {
+  display: flex;
+  align-items: center;
+}
+
+.discount {
+  margin-left: 20px;
+  padding: 5px 10px 5px 10px;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: hsl(220, 14%, 75%);
+}
+
+/* Purchase of product */
+.purchase .arranger {
+  background-color: hsl(223, 64%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+#number-of-pdt {
+  font-weight: 700;
+}
+
+.purchase button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  background-color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+}
+
+.purchase button p {
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+/* Credits */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Photo Gallery Modal*/
+.gallery-bg {
+  display: none;
+}
+
+/* Responsive Design */
+@media(min-width: 1440px) {
+
+  /* Header */
+  #menu-icon {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header .arranger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    list-style: none;
+    margin: 10px;
+  }
+
+  header nav ul a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  header nav ul li:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+  }
+
+  /* Main page layout */
+  .main {
+    display: flex;
+    /* width set to auto: so the content fit to the page w/o having to horizontally scroll */
+    width: auto;
+    margin: 100px;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    padding: 0 100px 0 100px;
+  }
+
+  /* All Thumbnails */
+  .image-thumbnail img,
+  .gallery-thumbnail img {
+    width: 20%;
+    border-radius: 10px;
+  }
+
+  .image-thumbnail img:hover,
+  .gallery-thumbnail img:hover {
+    cursor: pointer;
+    border: 3px solid hsl(26, 100%, 55%);
+    opacity: 0.4;
+  }
+
+  .image-thumbnail,
+  .gallery-thumbnail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  /* Image slider */
+  .prev,
+  .next {
+    display: none;
+  }
+
+  #product-image {
+    border-radius: 10px;
+  }
+
+  /* Photo gallery modal */
+  .gallery-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .gallery-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery-content .close-icon {
+    align-self: end;
+    margin-bottom: 10px;
+  }
+
+  #pdt-image {
+    width: 500px;
+  }
+
+  .gallery-slider {
+    position: relative;
+  }
+
+  .prev-icon,
+  .next-icon {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .prev-icon {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  .next-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+  }
+
+  .prev-icon:hover,
+  .next-icon:hover,
+  .close-icon:hover {
+    cursor: pointer;
+  }
+
+  /* Price */
+  .price {
+    display: block;
+  }
+
+  /* purchase */
+  .purchase {
+    display: flex;
+    align-items: center;
+  }
+}
